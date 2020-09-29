@@ -27,21 +27,16 @@
             var res = resx + resy;
             if(res <= 100){
                 document.getElementById("pagina").style.cursor = 'url("img/muycerca.png"), pointer';
-                console.log("muy cerca");
             }else if(res <= 300){
                 document.getElementById("pagina").style.cursor = 'url("img/cerca.png"), pointer';
-                console.log("cerca");
             }
             else if(res <= 500){
-                console.log("lejos");
                 document.getElementById("pagina").style.cursor = 'url("img/lejos.png"), pointer';
             }
             else if(res <= 700){
-                console.log("bastante lejos");
                 document.getElementById("pagina").style.cursor = 'url("img/bastantelejos.png"), pointer';
             }
             else if(res <= 1000 || res >= 1000){
-                console.log("muy lejos");
                 document.getElementById("pagina").style.cursor = 'url("img/muylejos.png"), pointer';
             }
         }
