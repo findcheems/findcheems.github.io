@@ -16,6 +16,8 @@
 
     <!-------------------SCRIPT------------------->
     <script>
+        var cheemsSrc = "img/cheems.png";
+        var cheemsOuchSrc = "img/ouch.png";
         var width = screen.width;
         var height = screen.height;
         var dimensiones = width + "x" + height;
@@ -108,7 +110,7 @@
         let elementLeft = parseInt(elementStyle.getPropertyValue('left').replace("px",""), 10);
         function funcion(){
             if(finalOuch == true){
-                cheems.src = "img/ouch.png";
+                cheems.src = cheemsOuchSrc;
                 var sound = new Audio("audios/ouch.mp3");
                 sound.play();
                 var play_again = document.getElementById("play_again");
@@ -117,7 +119,7 @@
                 home.style.display = "inline-block";
             }
             if(finalOuch == false){
-                cheems.src = "img/cheems.png";
+                cheems.src = cheemsSrc;
                 var snd = new Audio("audios/dogebonk.mp3");
                 snd.play();
                 cheems.style.width = "250px";
